@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Colt</string>
+    <string name="logIn">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="ok">Ok</string>
+    <string name="fill_email">Please enter the email</string>
+    <string name="fill_valid_phone">Please enter valid Email</string>
+    <string name="fill_password">Please fill the Password</string>
+    <string name="no_internet">No internet Please try again</string>
+    <string name="please_fill_the_company_name">Please fill the company name!</string>
+    <string name="required_for_this_app">Please allow the location permission</string>
+    <string name="enable_now">Enable Now</string>
+    <string name="upload_photo">Upload Photo <font color="#D12121">*</font></string>
+    <string name="remark">Remark</string>
+    <string name="product_manufacture">Product Manufacture</string>
+    <string name="product_manufacture1">Product Manufacture <font color="#D12121">*</font></string>
+    <string name="company_area">Company Area <font color="#D12121">*</font></string>
+    <string name="company_area1">Company Area</string>
+    <string name="company_website">Company Website</string>
+    <string name="company_website1">Company Website</string>
+    <string name="designation">Designation</string>
+    <string name="designation1">Designation <font color="#D12121">*</font></string>
+    <string name="alternative_contact_no">Alternative Contact No.</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="mobile_number1">Mobile Number <font color="#D12121">*</font></string>
+    <string name="email_id">Email id</string>
+    <string name="email_id1">Email Id <font color="#D12121">*</font></string>
+    <string name="contact_person">Contact Person</string>
+    <string name="contact_person1">Contact Person <font color="#D12121">*</font></string>
+    <string name="company_address">Company Address</string>
+    <string name="company_address1">Company Address <font color="#D12121">*</font></string>
+    <string name="company_name">Company Name</string>
+    <string name="company_name1">Company Name <font color="#D12121">*</font></string>
+</resources>
