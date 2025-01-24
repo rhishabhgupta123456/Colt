@@ -329,13 +329,21 @@ class MainActivity : SecurityClass() {
 
     }
 
-    fun getAddress(): String {
+    private fun getAddress(): String {
         return try {
             val geocoder = Geocoder(this, Locale.getDefault())
             val addresses: List<Address>? = geocoder.getFromLocation(latitude!!, longitude!!, 1)
             if (!addresses.isNullOrEmpty()) {
                 val address: Address = addresses[0]
-                address.subAdminArea ?: "District not found"
+                val addressLine = address.getAddressLine(0) ?: "Address line not found"
+                val locality = address.locality ?: "Locality not found"
+                val subLocality = address.subLocality ?: "Locality not found"
+                val adminArea = address.adminArea ?: "Admin area not found"
+                val subAdminArea = address.subAdminArea ?: "Admin area not found"
+                val postalCode = address.postalCode ?: "Postal code not found"
+
+                // Combining all the details
+                "$addressLine, $subLocality, $locality, $subAdminArea, $adminArea, $postalCode"
             } else {
                 "District not found"
             }
@@ -345,7 +353,7 @@ class MainActivity : SecurityClass() {
         }
     }
 
-    fun pickCurrentDateAndTime(): String {
+    private fun pickCurrentDateAndTime(): String {
         val calendar = Calendar.getInstance()
         val formatter = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
         return formatter.format(calendar.time)

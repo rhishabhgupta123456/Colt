@@ -1,16 +1,17 @@
 package com.urwayittech.colt.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.core.os.postDelayed
 import com.urwayittech.colt.databinding.ActivitySplashBinding
 import com.urwayittech.colt.utils.SecurityClass
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : SecurityClass() {
 
-    lateinit var binding: ActivitySplashBinding
+    private lateinit var binding: ActivitySplashBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,5 +27,6 @@ class SplashActivity : SecurityClass() {
                 finish()
             }
         }, 3000)
+
     }
 }
